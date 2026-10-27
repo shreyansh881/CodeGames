@@ -42,6 +42,12 @@ Blue starts with nine agents; Red has eight. The board also contains neutral car
 
 Revealed cards show a team-colored emblem. Tap or click one to bring its word into focus, and tap or click again to restore the emblem view.
 
+## Gameplay recording
+
+Watch a recording of CodeGames gameplay: [View the gameplay recording on Google Drive](https://drive.google.com/drive/folders/1vAoYxBnFAcKWTKPP-h9OBlrvewYD7838).
+
+Replace the placeholder with your Google Drive share link and set the video's access to **Anyone with the link** so visitors can watch it.
+
 ## Run on a local network
 
 Start the server on a computer connected to your network. Other players can visit that computer's local IP address on port `3000` (for example, `http://192.168.1.10:3000`). Make sure your firewall permits connections to that port.
