@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <title>CodeGames — Codenames, together</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="CodeGames home">
+        <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+        <span>code<span class="brand-light">games</span></span>
+      </a>
+      <div class="topbar-right"><span class="status-dot"></span><span>PLAY TOGETHER</span></div>
+    </header>
+
+    <main id="app" aria-live="polite">
+      <section class="loading-card"><span class="spinner"></span><p>Getting the board ready…</p></section>
+    </main>
+    <div id="toast" class="toast" role="status"></div>
+    <footer class="footer"><span>Made for curious minds.</span><span>CODEGAMES <i>·</i> WORDS IN GOOD COMPANY</span></footer>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

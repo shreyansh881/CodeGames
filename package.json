@@ -1,0 +1,10 @@
+{
+  "name": "codegames",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A multiplayer Codenames-inspired word game",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}
