@@ -11,6 +11,12 @@ CodeGames is a browser-based, multiplayer Codenames-style word game. Players joi
 
 No package installation is required. Run `npm test` to exercise room recovery and match-stat persistence. Rooms and match stats are saved locally in `data/state.json`, so players can refresh or reconnect with their saved browser session, and rooms survive a server restart. Set `CODEGAMES_DATA_DIR` to choose another data directory. Back up this directory to preserve rooms and stats. Run one server process against a data directory at a time; this local-file storage is not intended for multiple server instances or ephemeral hosting. To play over a local network, other players can open the host computer's local network address on port `3000`.
 
+## Deploy on Render
+
+The included `render.yaml` configures a free Render web service. Push this project to GitHub, then in Render choose **New → Blueprint**, connect the repository, and deploy the `codegames` service. Render provides the public URL when the deploy finishes.
+
+The free service uses ephemeral storage. Rooms and match stats are written to `data/state.json`, but they may be lost when the service restarts or is redeployed. Use a host with a persistent disk if you need saved games and stats to survive those events.
+
 ## Word selection
 
 The server uses a built-in curated pool of 688 distinct, clue-friendly words. It chooses 25 words at random for each board and avoids words used on the previous four boards in that room. Word matching ignores capitalization, spacing, punctuation, and accents when filtering duplicates and rejecting clues that match a board word. The per-room recent-word history is kept in memory and resets when the server restarts.
